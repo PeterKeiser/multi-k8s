@@ -9,7 +9,7 @@ docker push peterkeiser/multi-client:$SHA
 docker push peterkeiser/multi-server:$SHA
 docker push peterkeiser/multi-worker:$SHA
 
-kubectl apply -f k82
+kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=peterkeiser/multi-server:$SHA
 kubectl set image deployments/client-deployment client=peterkeiser/multi-client:$SHA
 kubectl set image deployments/worker-deployment worker=peterkeiser/multi-worker:$SHA
