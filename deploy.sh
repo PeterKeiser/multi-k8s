@@ -13,5 +13,3 @@ kubectl apply -f k82
 kubectl set image deployments/server-deployment server=peterkeiser/multi-server:$SHA
 kubectl set image deployments/client-deployment client=peterkeiser/multi-client:$SHA
 kubectl set image deployments/worker-deployment worker=peterkeiser/multi-worker:$SHA
-
-
